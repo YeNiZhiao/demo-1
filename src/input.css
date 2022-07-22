@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    overflow-x: hidden;
+}
+
+.awalan {
+    background-image: url(../img/bg-1.png);
+    background-size: cover;
+}
+
+.hilang {
+    transform: translateY(-1000px);
+    opacity: 0;
+    transition: .7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nav {
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%) translateY(1000px);
+}
+
+.show {
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+}
